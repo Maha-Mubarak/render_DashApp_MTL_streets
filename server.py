@@ -16,7 +16,8 @@ def create_app():
     from app import app  # pylint: disable=import-outside-toplevel
     return app.server
 
+application = create_app()
 
 if __name__ == "__main__":
     #create_app().run()
-    application.run()
+    application.run(debug=True)
